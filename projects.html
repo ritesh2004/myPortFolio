@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="2.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            background-image: url("wall.jpg");
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        footer{
+            display: flex;
+            justify-content: center;
+        }
+        .row1,
+        .row2,
+        .row3 {
+            display: flex;
+            /* justify-content: center; */
+            flex-direction: row;
+            justify-content: space-between;
+            margin-left: 80px;
+            margin-right: 80px;
+            margin-top: 100px;
+            margin-bottom: 50px;
+        }
+
+        .box {
+            backdrop-filter: blur(10px);
+            background-color: rgb(78 78 88 / 14%);
+            padding: 10px 10px;
+            width: 350px;
+            height: 450px;
+            border: solid 1.5px rgb(78 78 88 / 14%);
+            border-radius: 15px 15px;
+            background-repeat: space;
+            box-shadow: 0px 5px 30px -10px black;
+        }
+
+        code {
+            font-size: 2rem;
+            color: rgb(236, 231, 155);
+        }
+
+        .box h5 a {
+            color: bisque;
+            position: absolute;
+            bottom: 30px;
+            left: 37%;
+            text-decoration: none;
+            text-shadow: 5px 5px 5px black;
+        }
+
+        .box h5 a:hover {
+            color: aquamarine;
+        }
+
+        .box h3 {
+            color: aqua;
+            text-shadow: 4px 4px 5px rgba(66, 70, 70, 0.803);
+        }
+
+        .box p {
+            color: rgb(2, 3, 65);
+            padding-bottom: 30px;
+        }
+
+        .declaration {
+            background-color: rgba(74, 74, 249, 0.226);
+            color: rgb(231, 240, 61);
+            font-size: large;
+            margin: 0 auto;
+            margin-top: 20px;
+            justify-content: center;
+            width: fit-content;
+            padding: 8px 8px;
+            border: solid 2px rgb(93, 189, 241);
+            border-radius: 5px 5px;
+        }
+        @media screen and (max-width: 1310px) {
+            .box{
+                width: 250px;
+                height: 450px;
+            }
+        }
+        @media screen and (max-width:1024px) {
+
+            .row1,
+            .row2,
+            .row3 {
+                flex-direction: column;
+            }
+
+            .box {
+                width: 450px;
+                height: 400px;
+                margin: 0 auto;
+                margin-top: 40px;
+            }
+        }
+        @media screen and (max-width: 645px) {
+            .box{
+                margin: 0 auto;
+                position: relative;
+                left: 50%;
+                right: 50%;
+                transform: translateX(-50%);
+                margin-top: 20px;
+            }
+        }
+        @media screen and (max-width: 555px) {
+
+            .row1,
+            .row2,
+            .row3 {
+                flex-direction: column;
+            }
+
+            .box {
+                width: 280px;
+                height: auto;
+                position: relative;
+                left: 50%;
+                right: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="declaration">
+            <i>
+                My Projects are given below. Read and go to the respective github repositories to see more about the
+                projects.
+            </i>
+        </div>
+        <div class="row1">
+            <div class="box" id="box1">
+                <h3>Password Generator</h3>
+                <p>
+                    This application will create strong passwords containing capital,small alphabet, number and special
+                    character. First of all it will prompt to the user for giving username for the password and the no
+                    of
+                    character user want to set the password. Then it will create the password for the particular
+                    username
+                    and save it to a local drive.
+                </p>
+                <h5><a href="https://github.com/ritesh2004/ritesh2004/tree/main/PasswordGenerator">GitHub Repo</a></h5>
+            </div>
+            <div class="box" id="box2">
+                <h3>Python Grade System</h3>
+                <p>
+                    This package will creat excel file automatically from user input. First of all when you will run
+                    this
+                    file it prompts user to input some required data like- Name, Roll No, Department, Sex, marks. Then
+                    it
+                    will make grade depending upon marks and make an excel file containg all data(which are mentioned
+                    above). It will save your time and increase productivity.
+                </p>
+                <h5><a href="https://github.com/ritesh2004/ritesh2004/tree/main/grade_system">GitHub Repo</a></h5>
+            </div>
+            <div class="box" id="box3">
+                <h3>Analog Clock</h3>
+                <p>
+                    This is an analog clock will display current time on your screen. This is a customisable analog
+                    clock.
+                    User can change font style, font size, font color, color or styling of outer frame of the clock.
+                    Basically this project is made by using python tkinter GUI.
+                </p>
+                <h5><a href="https://github.com/ritesh2004/ritesh2004/tree/main/AnalogClock">GitHub Repo</a></h5>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="box" id="box4">
+                <h3>Cashier Machine</h3>
+                <p>
+                    This is a simple cashier machine. First of all it will prompt to the user to give the credentials
+                    like-
+                    Name, Id no, Email Id, Phone No, Address etc. Then it will display the available items in the store
+                    and
+                    their price also. After that customer has to choose the items they want to buy and the quantity of
+                    that
+                    particular item. After this process when customer's buying would be over it will create a excel file
+                    containing all buying history and total amount customer has to pay, discount, Taxes. <br> <span
+                        style="background-image: linear-gradient(red,yellowgreen);">***The new version of this
+                        application will be released soon.</span>
+                </p>
+                <h5><a href="https://github.com/ritesh2004/ritesh2004/tree/main/CashierMachine">GitHub Repo</a></h5>
+            </div>
+            <div class="box" id="box5">
+                <h3>Tic-Tac-Toe Game</h3>
+                <p>
+                    When you will run this file in a tic-tac-toe box would be drawn to the terminal. Then it will prompt
+                    users to give their choice. After taking users turn, it will make its decision and update the box
+                    and
+                    draw again the box.
+                </p>
+                <h5><a href="https://github.com/ritesh2004/ritesh2004/tree/main/Tic_Tac_Toe">GitHub Repo</a></h5>
+            </div>
+            <div class="box" id="box6">
+                <h3>Virtual Mouse</h3>
+                <p>
+                    Whenever you run this project it will detect your index finger and according to your index finger
+                    the
+                    mouse pointer will move. When you will close your index finger and thumb then it will do left click.
+                </p>
+                <h5><a href="https://github.com/ritesh2004/ritesh2004/tree/main/VirtualMouse">GitHub Repo</a></h5>
+            </div>
+        </div>
+        <div class="row3">
+            <div class="box" id="box7">
+                <h3>Hand Landmarks Detector</h3>
+                <p>This application will draw landmarks on user's hand detected by webcam.
+                    MediaPipe Hands is a high-fidelity hand and finger tracking solution. It employs machine learning
+                    (ML)
+                    to infer 21 3D landmarks of a hand from just a single frame. Whereas current state-of-the-art
+                    approaches
+                    rely primarily on powerful desktop environments for inference, our method achieves real-time
+                    performance
+                    on a mobile phone, and even scales to multiple hands. We hope that providing this hand perception
+                    functionality to the wider research and development community will result in an emergence of
+                    creative
+                    use cases, stimulating new applications and new research avenues.
+                </p>
+                <h5><a href="https://github.com/ritesh2004/ritesh2004/tree/main/HandLandmarks_Mediapipe">GitHub Repo</a>
+                </h5>
+            </div>
+            <div class="box" id="box8">
+                <h3>Face Mesh</h3>
+                <p> Whenever user will run this file, it will prompt to the user to give their choice whether he/she
+                    want to
+                    give the input via static image or webcam. If user choice for static image, it will prompt to the
+                    user
+                    to give the image path. This project is based on MediaPipe solution.MediaPipe Face Mesh is a
+                    solution
+                    that estimates 468 3D face landmarks in real-time even on mobile devices. It employs machine
+                    learning
+                    (ML) to infer the 3D facial surface, requiring only a single camera input without the need for a
+                    dedicated depth sensor. Utilizing lightweight model architectures together with GPU acceleration
+                    throughout the pipeline, the solution delivers real-time performance critical for live experiences.
+                </p>
+                <h5><a href="https://github.com/ritesh2004/ritesh2004/tree/main/Face_Mesh">GitHub Repo</a></h5>
+            </div>
+            <div class="box" id="box9">
+                <h3>Document Scanner with Python</h3>
+                <p>
+                    This is a simple document scanner. It will take static image. It will then crop the image
+                    automatically and will make a copy of this croped document.
+                </p>
+                <h5><a href="https://github.com/ritesh2004/ritesh2004/tree/main/Document_Scanner">GitHub Repo</a></h5>
+            </div>
+        </div>
+    </header>
+    <footer>
+        <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle"
+                viewBox="0 0 16 16">
+                <path
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z" />
+            </svg>
+            <i class="bi bi-c-circle">Ritesh Pramanik-2023. All rights reserved</i>
+        </p>
+    </footer>
+</body>
+
+</html>
